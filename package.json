@@ -1,0 +1,25 @@
+{
+  "name": "mockpass-on-netlify",
+  "version": "0.0.0",
+  "description": "A package to deploy MockPass on Netlify",
+  "main": "serverless.js",
+  "scripts": {
+    "test": "echo \"No tests\"",
+    "prebuild": "mkdir .netlify/functions",
+    "build": "zip -r .netlify/functions/serverless.zip . -x .git/ -x .git/**\\*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demossg/mockpass-on-netlify.git"
+  },
+  "author": "Open Government Products (https://open.gov.sg)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demossg/mockpass-on-netlify/issues"
+  },
+  "homepage": "https://github.com/demossg/mockpass-on-netlify#readme",
+  "dependencies": {
+    "@opengovsg/mockpass": "^4.0.12",
+    "serverless-http": "^3.2.0"
+  }
+}
