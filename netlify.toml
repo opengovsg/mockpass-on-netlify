@@ -12,6 +12,11 @@
   MOCKPASS_STATELESS = "true"
   ENCRYPT_MYINFO = "true"
 
+[template.environment]
+  SHOW_LOGIN_PAGE = "Show login page at runtime"
+  MOCKPASS_STATELESS = "Set MockPass to run in stateless processes"
+  ENCRYPT_MYINFO = "Encrypt MyInfo personas and verify requests"
+
 [[redirects]]
   force = true
   from = "/*"
