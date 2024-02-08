@@ -1,5 +1,6 @@
 [build]
   command = "npm run build"
+  publish = "api"
 
 [context.production.environment]
   SHOW_LOGIN_PAGE = "true"
