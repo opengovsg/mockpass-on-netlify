@@ -5,8 +5,8 @@
   "main": "serverless.js",
   "scripts": {
     "test": "echo \"No tests\"",
-    "prebuild": "mkdir .netlify/functions",
-    "build": "zip -r .netlify/functions/serverless.zip . -x .git/ -x .git/**\\*"
+    "prebuild": "mkdir netlify && mkdir netlify/functions",
+    "build": "zip -r netlify/functions/serverless.zip . -x .git/ -x .git/**\\*"
   },
   "repository": {
     "type": "git",
