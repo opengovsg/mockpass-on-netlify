@@ -5,8 +5,8 @@
   "main": "api/index.js",
   "scripts": {
     "test": "echo \"No tests\"",
-    "prebuild": "mkdir netlify && mkdir netlify/functions",
-    "build": "zip -r netlify/functions/api.zip . -x .git/ -x .git/**\\*"
+    "prebuild:netlify": "mkdir netlify && mkdir netlify/functions",
+    "build:netlify": "zip -r netlify/functions/api.zip . -x .git/ -x .git/**\\*"
   },
   "repository": {
     "type": "git",

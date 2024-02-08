@@ -17,7 +17,7 @@ Acts as an adaptor for MockPass' ExpressJS into a Netlify Funciton, using
 
 ### `package.json`
 
-Contains a `build` run script that zips the contents of the repo into an
+Contains a `build:netlify` run script that zips the contents of the repo into an
 archive named `serverless.zip`, placing it at `/netlify/functions`. Netlify
 then treats the entire archive as a single function[^1]. This is needed, as 
 Netlify's build process does not bundle files that are not referenced by `require()`
@@ -28,7 +28,7 @@ Netlify's build process does not bundle files that are not referenced by `requir
 Configures Netlify with the following:
 - environment variables to `SHOW_LOGIN_PAGE`, `ENCRYPT_MYINFO` and run Mockpass in stateless
   mode using `MOCKPASS_STATELESS`, to account for the stateless nature of Netlify Functions
-- specify `npm run build` as the build command
+- specify `npm run build:netlify` as the build command
 - routes all requests to `/.netlify/functions/api`, including any trailing paths and parameters
 
 
