@@ -15,4 +15,4 @@
   force = true
   from = "/*"
   status = 200
-  to = "/.netlify/functions/serverless/:splat"
+  to = "/.netlify/functions/api/:splat"

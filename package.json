@@ -2,11 +2,11 @@
   "name": "mockpass-on-netlify",
   "version": "0.0.0",
   "description": "A package to deploy MockPass on Netlify",
-  "main": "serverless.js",
+  "main": "api/index.js",
   "scripts": {
     "test": "echo \"No tests\"",
     "prebuild": "mkdir netlify && mkdir netlify/functions",
-    "build": "zip -r netlify/functions/serverless.zip . -x .git/ -x .git/**\\*"
+    "build": "zip -r netlify/functions/api.zip . -x .git/ -x .git/**\\*"
   },
   "repository": {
     "type": "git",
