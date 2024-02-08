@@ -2,6 +2,10 @@
 
 A repository to deploy MockPass on Netlify, using Netlify Functions
 
+## Deploy now
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/demossg/mockpass-on-netlify#SHOW_LOGIN_PAGE=true&ENCRYPT_MYINFO=true&MOCKPASS_STATELESS=true)
+
+
 ## How it works
 
 Files of interest are `api/index.js`, `package.json` and `netlify.toml`
