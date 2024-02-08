@@ -1,6 +1,17 @@
 [build]
   command = "npm run build"
   functions = ".netlify/functions/"
+
+[context.production.environment]
+  SHOW_LOGIN_PAGE = "true"
+  MOCKPASS_STATELESS = "true"
+  ENCRYPT_MYINFO = "true"
+
+[context.branch-deploy.environment]
+  SHOW_LOGIN_PAGE = "true"
+  MOCKPASS_STATELESS = "true"
+  ENCRYPT_MYINFO = "true"
+
 [[redirects]]
   force = true
   from = "/*"
