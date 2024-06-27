@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/demossg/mockpass-on-netlify#readme",
   "dependencies": {
-    "@opengovsg/mockpass": "^4.0.12",
+    "@opengovsg/mockpass": "^4.3.2",
     "serverless-http": "^3.2.0"
   }
 }
